@@ -46,17 +46,17 @@ sections:
     content:
       title: Skills
       items:
-        - name: R
-          description: 90%
-          icon: r-project
-          icon_pack: fab
-        - name: Statistics
-          description: 100%
-          icon: chart-line
-          icon_pack: fas
-        - name: Photography
+        - name: Programming
           description: 10%
-          icon: camera-retro
+          icon: laptop-code
+          icon_pack: fas
+        - name: French
+          description: 20%
+          icon: language
+          icon_pack: fas
+        - name: Sport
+          description: 70%
+          icon: person-running
           icon_pack: fas
   - block: experience
     content:
@@ -70,27 +70,20 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
+        - title: Student
+          company: RUDN University | Faculty of Physics, Mathematics and Natural Science | Specialty "Mathematics and Computer Science"
+          company_url: 'https://www.rudn.ru/'
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+          location: Moscow
+          date_start: '2022-09-01'
+          date_end: '2026-06-01'
           description: |2-
-              Responsibilities include:
+              What is unclude:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              * Learning advanced mathematics
+              * Learning different programming languages
+           
+
     design:
       columns: '2'
   - block: accomplishments
@@ -106,29 +99,29 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
+        - certificate_url: https://esystem.rudn.ru/pluginfile.php/1817086/assignsubmission_file/submission_files/1925785/1 курс сертификат в пдф файле.pdf?forcedownload=1
           date_end: ''
-          date_start: '2021-01-25'
+          date_start: '2022-10-30'
           description: ''
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
+          organization: Lektorium
+          organization_url: https://www.lektorium.tv/
+          title: History Of Computers and Programming | История ЭВМ и Программирования
           url: ''
-        - certificate_url: https://www.edx.org
+        - certificate_url: https://user.gto.ru/
           date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
+          date_start: '2022-01-31'
           description: ''
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
+          organization: Ministry of Sports of the Russian Federation
+          organization_url: https://user.gto.ru/
+          title: Awarded with the Golden Badge of GTO | Награждена Золотым Знаком Отличия ГТО
+          url: ''
+        - certificate_url: https://rusathletics.info/r_fed/buryatija
+          date_end: ''
+          date_start: '2017-07-05'
+          description: ''
+          organization: Federation of Athletics in the Republic of Buryatia
+          organization_url: https://rusathletics.info/r_fed/buryatija
+          title: The First Adult Category in Athletics in the 60/100 meters | Первый Взрослый разряд по Легкой Атлетике на дистанции 60/100 метров 
           url: ''
     design:
       columns: '2'
