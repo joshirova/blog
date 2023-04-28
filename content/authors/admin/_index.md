@@ -48,21 +48,30 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: twitter
+  - icon: erlang
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://www.elibrary.ru/project_user_office.asp
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://github.com/joshirova
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://myaccount.google.com/personal-info?hl=ru
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/my-orcid?orcid=0009-0000-5964-8889
+  - icon: mendeley
+    icon_pack: ai
+    link: https://www.mendeley.com/settings/account/
+  - icon: researchgate
+    icon_pack: ai
+    link: https://www.researchgate.net/profile/Yulia-Oshirova
+  - icon: academia
+    icon_pack: ai
+    link: https://independent.academia.edu/YuliaOshirova
+  - icon: arxiv
+    icon_pack: ai
+    link: https://arxiv.org/user/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
