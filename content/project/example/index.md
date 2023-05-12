@@ -1,9 +1,9 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: Понятие процесса и его виды | The concept of the process and its types
+summary: You will be very inerested. Project about processes in two parts. Project on Russian, my native language. 
 tags:
   - Deep Learning
-date: '2016-04-27T00:00:00Z'
+date: '2023-05-12T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -30,12 +30,146 @@ url_video: ''
 slides: example
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+# Часть 1. Что такое процесс?
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+1.1 Понятие процесса
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+   - Это программа в состоянии выполнения;
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+   - Некоторый объект, который выполняется на процессоре.
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+    По сути своей все программное обеспечение, которые работает под управлением операционной системы на нашем компьютере, даже включая иногда и саму ОС организованно в виде множества процессов.
+
+    Процессы это минимальный примитив, который позволяет организовать некоторую многозадачность.
+
+    Как исполняемый объект, процесс позволяет параллельное выполнение нескольких программ в системе (ЦП переключается между программами)
+
+    Все ПО, работающее на компьютере, включая саму ОС, организованно в виде множества процессов.
+
+    1.2 Состав процесса.
+
+    Разберем из чего же состоит процесс. Процесс состоит из трех основных компонент (рис. 1):
+
+    1. Исполняемого кода;
+    2. Ассоциируемых с ним данных, необходимых для выполнения этой
+
+    программы;
+
+    3. Контекста – информация для ОС, необходимая для управления процессом.
+
+    Эта информация используется для переключения между процессами, для сохранения и восстановления состояния процесса:
+    — Номер процесса;
+    — Регистры ЦП;
+
+    — Содержимое стека.
+    Таким образом, контекст – это основа для переключения процессов.
+
+    ОС ведет список всех процессов, находящихся в системе. Он может усложняться, а может быть самым простым.
+
+Внизу 0 адрес, сверху максимальный. На максимуме расположен стек, затем куча, которые растут в противоположных направлениях, данные и код программы.
+
+Важно понимать, что каждый процесс обладает своим адресным пространством.
+
+На схеме виртуальное адресное пространство начинается c нуля и заканчивается неким максимумом, которое состоит из сегментов: кода, данных и стека.
+
+При запуске программы (например MS Word) в ОС происходит следующее: — Выделяется место в памяти.
+
+Каждый процесс выполняется в собственном виртуальном адресном пространстве, которое состоит:
+
+- Сегмента стека –используется для вызовов функций и системных вызовов;
+
+- Сегмента данных – переменные статические и динамические, выделяемые из кучи (все что нужно для работы);
+
+- Сегмента кода – код программы, обычно предоставляется доступ «только для чтения».
+
+Запуск одной и той же программы несколько раз порождает новые процессы, у каждой из которых свое виртуальное адресное пространство и окружение. Т.е. эта схема будет у каждого запущенного процесса.
+
+***1.3 Виды процессов***
+
+Существует два типа процессов:
+1) Системные процессы;
+2) Пользовательские процессы.
+Системные процессы могут порождать другие процессы.
+
+Процесс пользователя не может породить другой процесс, он через запрос на системное обслуживание обращается к ОС которая и выполняет эту функцию.
+
+Контекст и дескриптор процесса.
+
+На протяжение существование процесса, его выполнение может быть многократно прервано и продолжено. Для того чтобы возобновить выполнение процесса, необходимо восстановить состояние его операционной среды на момент прерывание. Состояние операционной среды определяется, состоянием регистров, режимом работы процессора, указателями на открытые файлы, информацией о незавершенных операциях ввода вывода, кодами ошибок системных вызовах. Эта информация называется контекстом процесса.
+
+***1.4 Блок управления процессом (Process Control Block – PCB) Данный блок постоянного размера для все процессов в ОС.***
+
+Содержит всю информацию, необходимую для осуществления над процессом любых действий – приостановки, последующего восстановления процесса, выгрузки на диск и загрузки с диска.
+
+Идентификаторы процесса
+
+- Номер процесса(так называемый PID — Process IDentificator)
+
+- Информация о пользователе
+
+- Состояние процесса – регистры, указатели стека. Состояние процесса:
+
+ Информация для планировщика – приоритет которым обладает данные процесс;
+
+- Привилегии – доступ к памяти, допустимые инструкции; 5
+
+- Информация о виртуальной памяти, присвоенной процессу;
+
+- Статистическая информация и ограничения (ограничения по времени
+
+    выполнения, статистика о затраченном времени ЦП);
+
+- Ввод/вывод – владение ресурсами, открытые файлы, выделенные устройства.
+
+# Глава 2. Состояния процессов
+
+    ***2.1 Диспетчеризация***
+
+    Диспетчер – отправляет процессы на выполнение, выделяет время ЦП и переключает ЦП с одного процесса на другой.
+
+    В любой момент времени любой процесс может находиться в каком-либо состоянии: как минимум это ожидание ввода/вывывода, выполнение, готовность к выполнению, и еще можно придумать ряд дополнительных промежуточных состояний.
+
+    Рассмотрим две модели состояний процессов.
+    2.2 Первая модель состояний процесса
+
+    Конечная цель любой операционной системы – выполнить какую-либо работу, задачу, ответить на запрос пользователя...
+
+    Можно выделить три основные состояния процесса (рис.2):
+
+    1. Выполнения (исполняется на ЦП);
+    2. Готовности (временно остановлен);
+    3. Блокировки (ожидает внешнего события);
+
+Любой процесс находится в нескольких состояниях, в самом простом варианте можно выделить три состояния:
+
+    Предположим, что любой процесс начинает свою “жизнь” с состояния «Выполнение».
+
+    Если был сделан запрос на ввод/вывод, то он осуществляется с некоторой задержкой, ибо ввод/вывод работает медленней чем ЦП, значит появляется некоторое ожидание события (т.е. ожидание ввода/вывода). Процесс в это время находится в заблокированном
+
+    состоянии «Блокировка». Ему диспетчер не выделяет времени ЦП, ведь это бесполезно, процесс не может делать какую-либо работу пока не выполнится ввод/вывод.
+
+    Далее, когда произошел ввод/вывод процесс уже может что-то обработать, его состояние изменяется в
+    состояние «Готовность» (процесс должен показать диспетчеру о своей готовности работать).
+
+    Диспетчер при очередном переключении между процессами видит, что есть процесс в состоянии «Готовность» и переключает его в состоянии «Выполнение».
+    В этом состоянии «Выполнение», диспетчер передает процессу квант времени ЦП – начинается непосредственное выполнение. Этот круг замкнутый.
+
+    Еще одно состояние, когда процесс попадает в «Готовность» — когда квант процессорного времени, отведенный на выполнение истекает, то происходит так называемый таймаут, процесс из
+    состояния «Выполнение» переходит в «Готовность» и диспетчер в это время передает управление другому процессу.
+
+Диспетчеру системы нужно знать, что происходит с общими событиями: с вводом/выводом, синхронизацией, др.
+ 
+
+Новая модель состоит из пяти состояний, эта модель очень близка к сегодняшним ОС.
+
+    «Новый» – процесс создан, но он еще не помещен ОС в пул выполняемых процессов. Создана структура РСВ, но процесс еще не загружен в память (т.е.создан РСВ и пустое адресное пространство).
+
+    Если новый процесс принимается ОС, если все соблюдается, все права доступа, то процесс помещается в состояние «Готовность»: процесс полностью готов к выполнению, т.е. может получить управление и непосредственно начать работать. Все загружено в память, инициализированы данные, стек, куча.
+
+    «Выполнение» — процесс исполняется.
+
+    «Блокировка» — процесс ожидает внешнего события (ввода/вывода).
+
+    «Завершение» — процесс удаляется из пула выполненных процессов, он закончил работу. Процесс помечается как «завершенный».
+    Диспетчер будет выполнять работу по очистке процесса. На данном этапе проходит работа по освобождению памяти, закрытию ресурсов процесса (вв/выв, файлов...).
+
